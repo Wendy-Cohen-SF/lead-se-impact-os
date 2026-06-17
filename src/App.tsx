@@ -65,16 +65,18 @@ const navItems: { id: View; label: string }[] = [
   { id: 'testimonials', label: 'Testimonials' },
 ]
 
+const org62AsOf = 'Org62-validated as of June 2026'
+
 const executiveMetrics = [
   {
     label: 'Total open pipeline influenced (all attributed accounts)',
     value: '$1.85M',
     detail:
-      'Org62: 58 open opportunities attributed via OpportunityTeamMember (Wendy Cohen) using Opportunity.sfbase__ACV__c, including impact beyond specifically named account stories.',
+      'Org62-validated as of June 2026: $1.85M open pipeline across 58 active opportunities attributed to Wendy Cohen, including influence beyond the named account stories.',
   },
-  { label: 'Attached ACV since SFDC start', value: '$8.97M', detail: 'Closed-won ACV attributed since Apr 2022 start date in Org62' },
-  { label: 'Attached ACV last fiscal year', value: '$1.61M', detail: 'Closed-won ACV attributed in LAST_FISCAL_YEAR' },
-  { label: 'Attached ACV this fiscal year', value: '$1.36M', detail: 'Closed-won ACV attributed in THIS_FISCAL_YEAR' },
+  { label: 'Attached ACV since SFDC start', value: '$8.97M', detail: `${org62AsOf}: cumulative closed-won ACV since April 2022.` },
+  { label: 'Attached ACV last fiscal year', value: '$1.61M', detail: `${org62AsOf}: FY26 closed-won ACV.` },
+  { label: 'Attached ACV this fiscal year', value: '$1.36M', detail: `${org62AsOf}: FY27 closed-won ACV (to date).` },
   {
     label: 'Named-account stories open FY27 pipeline',
     value: '$7.4M+',
@@ -100,7 +102,7 @@ const accounts: AccountImpact[] = [
     competencies: ['Owns complex deals end-to-end', 'Drives multi-cloud technical strategy', 'Orchestrates cross-functional resources'],
     proof: [
       'AE quote: "Without you taking charge way back when, this deal does not happen."',
-      'Org62 confirms closed-won ACV at $200,603.52 on Apr 30, 2026 for the primary Manatt transformation motion.',
+      `${org62AsOf}: Manatt primary transformation motion closed-won at $200,603.52 on April 30, 2026.`,
       'Demo feedback praised flow, engagement, and real-time issue handling.',
       'Architecture presented to executive customer stakeholders.',
     ],
@@ -119,7 +121,7 @@ const accounts: AccountImpact[] = [
     stakeholders: ['AE', 'Analytics SE', 'MuleSoft', 'Data Cloud', 'Marketing Cloud', 'Customer CIO', 'Customer Sr. Director'],
     competencies: ['Drives multi-cloud technical strategy', 'Earns trusted advisor status with customers', 'Builds reusable assets for the team'],
     proof: [
-      'Org62 confirms active REIS/MMI expansion motions, including Integration Expansion at $300,000 and Signature Success at $125,000.',
+      `${org62AsOf}: active REIS/MMI expansion includes Integration Expansion ($300,000) and Signature Success ($125,000).`,
       'Customer voice praised Agentforce impact on business focus.',
       'Included in customer internal Salesforce footprint review.',
       'Readback deck pattern became a reusable blueprint.',
@@ -161,7 +163,7 @@ const accounts: AccountImpact[] = [
     competencies: ['Owns complex deals end-to-end', 'Orchestrates cross-functional resources', 'Strategic thought partner to AEs'],
     proof: [
       'AE quote: "Thank you for running point on this and rallying the team."',
-      'Org62 confirms active related motions: +Agentforce Service ($45,000), +Shield ($51,151.54), and +SCV/Agentforce Voice ($697,500).',
+      `${org62AsOf}: active related motions include +Agentforce Service ($45,000), +Shield ($51,151.54), and +SCV/Agentforce Voice ($697,500).`,
       'TA quote validated pre-call roles and agenda clarity.',
       'Owned technical narrative and evaluation plan under timeline and scope pressure.',
     ],
@@ -174,7 +176,7 @@ const accounts: AccountImpact[] = [
     headline: 'Orchestrated simultaneous workstreams for a new Core Named AE.',
     status: 'Strong',
     businessImpact:
-      'Demonstrates sustained FY26-to-FY27 performance by helping a new AE inherit and progress one of the highest-complexity accounts in the territory, with Org62 showing $2.65M+ open pipeline on core Resource Innovations motions.',
+      `Demonstrates sustained FY26-to-FY27 performance by helping a new AE inherit and progress one of the highest-complexity accounts in the territory, with ${org62AsOf.toLowerCase()} confirming $2.65M+ open pipeline on core Resource Innovations motions.`,
     salesMotion:
       'Led North Star POV, InfoSec call with CTO, Agentforce Rebate Agent architecture, weekly core sync, and Big Bet Account Plan input. The same orchestration habits built in FY26 were applied in FY27 to stabilize execution through territory change.',
     products: ['Agentforce', 'Service Cloud', 'MuleSoft IDP', 'Tableau Cloud', 'Shield', 'Data Mask', 'Signature Success'],
@@ -185,8 +187,8 @@ const accounts: AccountImpact[] = [
       'Multiple technical and executive workstreams ran in parallel.',
       'Weekly operating cadence established for the core team.',
       'Slack evidence: #ZC:C08EVP0GY84:Resource Innovations shows ongoing reverse-demo, workshop, and coordination threads.',
-      'Org62 evidence: open motions include Signature Success Platform ($200,000), Signature Success ($112,500), and TAB Early Renewal Cloud Migration ($30,308.56), plus a recent closed-won add-on ($5,385.60).',
-      'Org62 aggregate snapshot: $2,650,280.87 open on Resource Innovations core account (plus additional related-org motions).',
+      `${org62AsOf}: open motions include Signature Success Platform ($200,000), Signature Success ($112,500), and TAB Early Renewal Cloud Migration ($30,308.56), plus a recent closed-won add-on ($5,385.60).`,
+      `${org62AsOf}: $2,650,280.87 remains open on the core Resource Innovations account, plus additional related-org motions.`,
     ],
     nextEvidence: 'Capture pipeline influenced and AE testimonial on ramp acceleration.',
   },
@@ -205,10 +207,10 @@ const accounts: AccountImpact[] = [
     competencies: ['Strategic thought partner to AEs', 'Drives multi-cloud technical strategy', 'Builds reusable assets for the team'],
     proof: [
       'Slack evidence: #ZC:C03RA4KD19U:The Olympic Club anchors account collaboration and executive storyline development.',
-      'Org62 evidence: active RFP motion "The Olympic Club - RFP - Revenue Cloud, Tableau, MuleSoft, & D360" at $353,706.26 (Stage 03).',
-      'Org62 aggregate snapshot: $494,302.26 open on The Olympic Club account across six active motions.',
-      'Org62 evidence: additional FY27 pipeline includes renewal ($53,482.07), Agentforce projected growth ($21,340.00), and UE upgrade ($13,935.69).',
-      'Org62 evidence: closed-won "Adding Agentforce at Renewal - (+26) Flex Credit bundles" at $10,966.09 supports FY26-to-FY27 continuity.',
+      `${org62AsOf}: active RFP motion "The Olympic Club - RFP - Revenue Cloud, Tableau, MuleSoft, & D360" is valued at $353,706.26 (Stage 03).`,
+      `${org62AsOf}: $494,302.26 is open on The Olympic Club account across six active motions.`,
+      `${org62AsOf}: additional FY27 pipeline includes renewal ($53,482.07), Agentforce projected growth ($21,340.00), and UE upgrade ($13,935.69).`,
+      `${org62AsOf}: closed-won "Adding Agentforce at Renewal - (+26) Flex Credit bundles" at $10,966.09 reinforces FY26-to-FY27 continuity.`,
     ],
     nextEvidence: 'Add opportunity mapping, executive meeting dates, and attributable pipeline movement once FY27 stages advance.',
   },
@@ -219,7 +221,7 @@ const accounts: AccountImpact[] = [
     headline: 'Extended FY26 orchestration approach into a new FY27 account motion.',
     status: 'Draft',
     businessImpact:
-      'Shows sustained year-over-year operating performance by applying the same trusted execution model to a fresh FY27 pursuit with multi-stakeholder alignment and measurable pipeline carry-forward, with $268K+ open in Org62.',
+      `Shows sustained year-over-year operating performance by applying the same trusted execution model to a fresh FY27 pursuit with multi-stakeholder alignment and measurable pipeline carry-forward, with ${org62AsOf.toLowerCase()} confirming $268K+ open.`,
     salesMotion:
       'Positioned strategic discovery, solution framing, and team coordination as a single operating thread rather than ad hoc support. This mirrors the account execution model proven across FY26 and carried forward into FY27.',
     products: ['Agentforce', 'Service Cloud', 'Data Cloud'],
@@ -227,9 +229,9 @@ const accounts: AccountImpact[] = [
     competencies: ['Owns complex deals end-to-end', 'Orchestrates cross-functional resources', 'Earns trusted advisor status with customers'],
     proof: [
       'Slack evidence: #ZC:C0AECNHCZJR:Proper Hospitality LLC tracks active account collaboration and execution updates.',
-      'Org62 evidence: active pipeline includes Member App ($100,000; Stage 02), Slack renewal ($83,700; Stage 01), and CC+ Growth ($22,500; Stage 03).',
-      'Org62 aggregate snapshot: $268,504.36 open across nine active Proper Hospitality motions.',
-      'Org62 evidence: closed-won "Proper - SLK - (+409) 465Biz+ Upgrade" at $71,604 demonstrates momentum converting into booked value.',
+      `${org62AsOf}: active pipeline includes Member App ($100,000; Stage 02), Slack renewal ($83,700; Stage 01), and CC+ Growth ($22,500; Stage 03).`,
+      `${org62AsOf}: $268,504.36 is open across nine active Proper Hospitality motions.`,
+      `${org62AsOf}: closed-won "Proper - SLK - (+409) 465Biz+ Upgrade" at $71,604 demonstrates momentum converting into booked value.`,
       'Evidence pattern supports sustained performance narrative from FY26 execution habits into FY27 expansion motions.',
     ],
     nextEvidence: 'Add quantified pipeline, stage progression, and attributed stakeholder quote as the FY27 cycle matures.',
@@ -240,16 +242,16 @@ const accounts: AccountImpact[] = [
     headline: 'Built momentum on an operationally variable account with in-quarter Tableau expansion and broader platform runway.',
     status: 'Strong',
     businessImpact:
-      'Even with lower closed ACV in some motions, the account shows strong strategic value: Org62 reflects $3.16M+ open pipeline with meaningful in-quarter conversion potential.',
+      `Even with lower closed ACV in some motions, the account shows strong strategic value: ${org62AsOf.toLowerCase()} reflects $3.16M+ open pipeline with meaningful in-quarter conversion potential.`,
     salesMotion:
       'Supported expansion sequencing across Tableau, Slack, A1E, and partner cloud motions while sustaining account rhythm and close planning on near-term opportunities.',
     products: ['Tableau', 'Slack', 'A1E', 'Partner Cloud'],
     stakeholders: ['Named AE', 'Account team', 'Customer technical and business evaluators'],
     competencies: ['Owns complex deals end-to-end', 'Strategic thought partner to AEs', 'Scales work for territory-level impact'],
     proof: [
-      'Org62 in-quarter signal: "Thumbtack - Tableau+ Upgrade" at $87,724.55 with close date 2026-06-26 (Stage 04 - Confirming Value With Power).',
-      'Org62 in-quarter signal: "Thumbtack, Inc - SPIFF" at $79,200 with close date 2026-06-30 (Stage 04).',
-      'Org62 aggregate snapshot: $3,158,680.89 open across 16 active Thumbtack motions.',
+      `${org62AsOf}: "Thumbtack - Tableau+ Upgrade" is at $87,724.55 with a June 26, 2026 close date (Stage 04 - Confirming Value With Power).`,
+      `${org62AsOf}: "Thumbtack, Inc - SPIFF" is at $79,200 with a June 30, 2026 close date (Stage 04).`,
+      `${org62AsOf}: $3,158,680.89 is open across 16 active Thumbtack motions.`,
       'Broader expansion runway includes A1E Upgrade ($536,515.68) and Slack Enterprise Plus Upgrade ($300,759).',
     ],
     nextEvidence: 'Add AE quote tying in-quarter execution discipline to broader FY27 expansion strategy.',
@@ -306,7 +308,7 @@ const accounts: AccountImpact[] = [
     stakeholders: ['AE', 'Principal TA', 'Compete Team', 'Customer Executive Stakeholder'],
     competencies: ['Earns trusted advisor status with customers', 'Strategic thought partner to AEs', 'Drives multi-cloud technical strategy'],
     proof: [
-      'Org62 confirms open expansion motions including MCE+ Upgrade ($583,834.76), AFCC Digital + BYOT ($104,817.00), and Agentforce + D360 Expansion ($300,000).',
+      `${org62AsOf}: open expansion includes MCE+ Upgrade ($583,834.76), AFCC Digital + BYOT ($104,817.00), and Agentforce + D360 Expansion ($300,000).`,
       'Manager notes identify Robbins as a trust-building turnaround story.',
       'AI ideation and data strategy workstreams moved forward.',
       'Compete team engaged for Agentforce positioning.',
