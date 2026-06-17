@@ -541,10 +541,11 @@ const testimonials: Testimonial[] = [
   },
   {
     name: 'Adam Barr',
-    role: 'Lead, Account SE',
+    role: 'Principal, Strategic SE',
     quote:
       "One of the things I look for most in my peers is the genuine desire for continual improvement. Over the past few years in working with Wendy, she has consistently demonstrated that desire. She actively seeks feedback, processes it, and shows up differently the next time. Across Marcus & Millichap, Senske, and Robbins, I watched Wendy evolve how she shows up, stakes ownership, and does something that is sometimes even harder than closing the deals. She's focused on building real relationships. Be that with her AEs, extended team members, or with customers.\n\nAt Marcus & Millichap, she was the constant through continual change: RVP transition, Strat SE changes, and new AE onboarding. The AE leaned on her as a true business partner and grew because of it. At Senske, she worked hand in hand with Kyle through a red account recovery that required as much trust as it did technical skill. And at Robbins, she positioned herself as a collaborator from day one and built the kind of customer credibility that unlocks multi-cloud conversations.\n\nWhat I've seen across all of it is an SE who genuinely cares about the people she works with, and the outcomes they collectively deliver. That's a character trait that is needed at all levels in the SE landscape.",
     competencies: ['Earns trusted advisor status with customers', 'Owns complex deals end-to-end', 'Mentors and elevates peers'],
+    avatarUrl: 'https://avatars.slack-edge.com/2023-09-01/5850349057761_a1f55b7d922b3e5384be_original.jpg',
   },
 ]
 
