@@ -101,6 +101,7 @@ const accounts: AccountImpact[] = [
     stakeholders: ['Named AE', 'Principal TA', 'Distinguished Strategic SE', 'Legal', 'Customer CIO', 'Customer CMO'],
     competencies: ['Owns complex deals end-to-end', 'Drives multi-cloud technical strategy', 'Orchestrates cross-functional resources'],
     proof: [
+      'AE quote: "Wendy - the OG who got us here! Without you taking charge way back when, this deal does not happen. Her ability to drive the strategy, own execution, and keep momentum through complexity was a major reason we got Manatt across the line."',
       'AE quote: "Without you taking charge way back when, this deal does not happen."',
       `${org62AsOf}: Manatt primary transformation motion closed-won at $200,603.52 on April 30, 2026.`,
       'Demo feedback praised flow, engagement, and real-time issue handling.',
