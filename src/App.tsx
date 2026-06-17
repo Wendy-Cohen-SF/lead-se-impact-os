@@ -453,10 +453,11 @@ const leadershipStories: LeadershipStory[] = [
 const testimonials: Testimonial[] = [
   {
     name: 'Ali Jarosch',
-    role: 'Lead, Account SE',
+    role: 'Director, Enterprise Architecture',
     quote:
       'Wendy is one of those SEs who makes every account she touches better — I\'ve seen it firsthand on Marcus & Millichap, where she was a core owner of a complex, multi-workstream executive engagement, driving everything from the "What We Heard" narrative to independently identifying a $150K licensing uplift opportunity. What makes her exceptional isn\'t just the output, it\'s how she works — she\'s genuinely easy to partner with, actively seeks feedback, and is always sharpening her skills, which makes her someone the whole team wants in the room. Her ability to navigate the complexity of team selling, keep stakeholders aligned, and operate across workstreams without dropping anything is something I don\'t take for granted. Wendy is clearly operating at a Principal level, and I\'d enthusiastically support her promotion.',
     competencies: ['Owns complex deals end-to-end', 'Orchestrates cross-functional resources', 'Mentors and elevates peers'],
+    avatarUrl: 'https://avatars.slack-edge.com/2021-01-28/1711165989536_4b9dd40f62d4152931f2_original.jpg',
   },
   {
     name: 'Kyle Blumberg',
