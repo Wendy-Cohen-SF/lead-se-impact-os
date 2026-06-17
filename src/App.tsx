@@ -115,18 +115,20 @@ const accounts: AccountImpact[] = [
     headline: 'Embedded across one of the territory’s most complex technical accounts.',
     status: 'Needs Quantification',
     businessImpact:
-      'Customer reported Agentforce automation helped reduce administrative work so the business could focus on clients.',
-    salesMotion: 'Supported Agentforce, Data Cloud, MuleSoft, Tableau, Marketing Cloud, ProServ, and footprint review motions across a multi-year architecture engagement.',
+      'Throughout the year, the account team pursued a multi-million transformational outcome that ultimately materialized in phased expansion motions; Wendy kept executive alignment anchored to the same long-term platform vision, preserving momentum and strategic continuity.',
+    salesMotion:
+      'Orchestrated Agentforce, Data Cloud, MuleSoft, Tableau, Marketing Cloud, ProServ, and footprint review motions as coordinated building blocks of a single north star architecture, sustaining direction through a multi-year, multi-stakeholder engagement.',
     products: ['Agentforce', 'Data Cloud', 'MuleSoft', 'Tableau', 'Marketing Cloud', 'ProServ'],
     stakeholders: ['AE', 'Analytics SE', 'MuleSoft', 'Data Cloud', 'Marketing Cloud', 'Customer CIO', 'Customer Sr. Director'],
     competencies: ['Drives multi-cloud technical strategy', 'Earns trusted advisor status with customers', 'Builds reusable assets for the team'],
     proof: [
       `${org62AsOf}: active REIS/MMI expansion includes Integration Expansion ($300,000) and Signature Success ($125,000).`,
-      'Customer voice praised Agentforce impact on business focus.',
+      'Customer voice praised Agentforce impact on business focus, reinforcing value realization while larger transformation phases are sequenced over time.',
       'Included in customer internal Salesforce footprint review.',
       'Readback deck pattern became a reusable blueprint.',
     ],
-    nextEvidence: 'Add influenced pipeline roll-up specific to REIS/MMI decision windows used in your promotion packet.',
+    nextEvidence:
+      'Add an executive timeline that maps the original transformational target to delivered phased wins, showing how the north star strategy sustained account progression.',
   },
   {
     account: 'Senske Family of Companies',
@@ -457,7 +459,7 @@ const testimonials: Testimonial[] = [
     name: 'Ali Jarosch',
     role: 'Director, Enterprise Architecture',
     quote:
-      'Wendy is one of those SEs who makes every account she touches better — I\'ve seen it firsthand on Marcus & Millichap, where she was a core owner of a complex, multi-workstream executive engagement, driving everything from the "What We Heard" narrative to independently identifying a $150K licensing uplift opportunity. What makes her exceptional isn\'t just the output, it\'s how she works — she\'s genuinely easy to partner with, actively seeks feedback, and is always sharpening her skills, which makes her someone the whole team wants in the room. Her ability to navigate the complexity of team selling, keep stakeholders aligned, and operate across workstreams without dropping anything is something I don\'t take for granted. Wendy is clearly operating at a Principal level, and I\'d enthusiastically support her promotion.',
+      'Wendy is one of those SEs who makes every account she touches better — I\'ve seen it firsthand on Marcus & Millichap, where she was a core owner of a complex, multi-workstream executive engagement, driving everything from the "What We Heard" narrative to independently identifying a licensing uplift path that represented ~$250K in potential ACV. What makes her exceptional isn\'t just the output, it\'s how she works — she\'s genuinely easy to partner with, actively seeks feedback, and is always sharpening her skills, which makes her someone the whole team wants in the room. Her ability to navigate the complexity of team selling, keep stakeholders aligned, and operate across workstreams without dropping anything is something I don\'t take for granted. Wendy is clearly operating at a Principal level, and I\'d enthusiastically support her promotion.',
     competencies: ['Owns complex deals end-to-end', 'Orchestrates cross-functional resources', 'Mentors and elevates peers'],
     avatarUrl: 'https://avatars.slack-edge.com/2021-01-28/1711165989536_4b9dd40f62d4152931f2_original.jpg',
   },
@@ -465,7 +467,7 @@ const testimonials: Testimonial[] = [
     name: 'Kyle Blumberg',
     role: 'Named AE, Manatt',
     quote:
-      "Wendy - the OG who got us here! Without you taking charge way back when, this deal does not happen. Her ability to drive the strategy, own execution, and keep momentum through complexity was a major reason we got Manatt across the line.",
+      'I am pleased to recommend Wendy Cohen, for Lead Account Solution Engineer at Salesforce.\nI worked closely with Wendy on the Manatt Phelps & Phillips account, a $500K transformation opportunity that closed in April 2026 after a year-long sales cycle. Wendy was instrumental in developing the opportunity from its early stages through close and was a trusted partner throughout the process.\nShe consistently demonstrated strong technical expertise, effective executive communication, and a deep understanding of customer requirements. Her contributions across discovery, solution design, demonstrations, and executive presentations helped build customer confidence and advance the deal at key stages.\nWendy is a highly capable Solution Engineer who delivers for both her customers and account teams. I recommend her without hesitation.\nSincerely,\nKyle Blumberg\nNamed Account Executive, Salesforce',
     competencies: ['Owns complex deals end-to-end', 'Orchestrates cross-functional resources'],
     avatarUrl: 'https://avatars.slack-edge.com/2020-12-14/1567547393238_916edad05b309b6a2f12_original.png',
   },
