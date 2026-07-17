@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import type { FormEvent } from 'react'
 import manattLogo from './assets/manatt-logo.png'
 import marcusMillichapLogo from './assets/marcus-millichap-logo.png'
 import properHospitalityLogo from './assets/proper-hospitality-logo.png'
@@ -561,14 +562,89 @@ const statusStyles: Record<EvidenceStatus, string> = {
   Draft: 'border-slate-200 bg-slate-100 text-slate-700',
 }
 
+const SITE_PASSWORD = 'Wendy2026'
+const SESSION_UNLOCK_KEY = 'lead-se-impact-os-unlocked'
+
 function App() {
   const [activeView, setActiveView] = useState<View>('narrative')
   const [selectedAccount, setSelectedAccount] = useState(accounts[0])
+  const [passwordInput, setPasswordInput] = useState('')
+  const [isUnlocked, setIsUnlocked] = useState(() => {
+    try {
+      return sessionStorage.getItem(SESSION_UNLOCK_KEY) === 'true'
+    } catch {
+      return false
+    }
+  })
+  const [showInvalidPassword, setShowInvalidPassword] = useState(false)
 
   const strongEvidenceCount = useMemo(
     () => accounts.filter((account) => account.status === 'Strong').length,
     [],
   )
+
+  const handleUnlock = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    if (passwordInput === SITE_PASSWORD) {
+      setIsUnlocked(true)
+      setShowInvalidPassword(false)
+      setPasswordInput('')
+      try {
+        sessionStorage.setItem(SESSION_UNLOCK_KEY, 'true')
+      } catch {
+        // Ignore session storage failures and keep unlock in memory.
+      }
+      return
+    }
+
+    setShowInvalidPassword(true)
+  }
+
+  if (!isUnlocked) {
+    return (
+      <main className="min-h-screen bg-[#f5f2ec] text-slate-900">
+        <div className="mx-auto flex min-h-screen w-full max-w-7xl items-center justify-center px-4 py-8 sm:px-6 lg:px-8">
+          <section className="w-full max-w-md rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+              Secure Access
+            </p>
+            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
+              Enter password to continue
+            </h1>
+            <p className="mt-3 text-sm leading-6 text-slate-600">
+              This executive readout is password protected.
+            </p>
+
+            <form className="mt-6 space-y-4" onSubmit={handleUnlock}>
+              <label className="block">
+                <span className="mb-2 block text-sm font-medium text-slate-700">Password</span>
+                <input
+                  type="password"
+                  value={passwordInput}
+                  onChange={(event) => setPasswordInput(event.target.value)}
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none ring-indigo-400 transition focus:border-indigo-500 focus:ring-2"
+                  autoFocus
+                  required
+                />
+              </label>
+
+              <button
+                type="submit"
+                className="w-full rounded-xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              >
+                Unlock Site
+              </button>
+
+              {showInvalidPassword ? (
+                <p className="text-sm font-medium text-red-700">Invalid password. Please try again.</p>
+              ) : null}
+            </form>
+          </section>
+        </div>
+      </main>
+    )
+  }
 
   return (
     <main className="min-h-screen bg-[#f5f2ec] text-slate-900">
